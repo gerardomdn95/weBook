@@ -2,28 +2,26 @@
   <div class="medium-4 columns">
     <h2>
       <i class="material-icons">shopping_basket</i>
-      <span>Checkout</span>
+      <span>Carrito</span>
     </h2>
   </div>
   <div class="medium-4 columns text-right">
     <h4>
-      Order Total
+      Total
       <span class="text--red text--bold js-gross-total">{{(cart | async).grossTotal | currency:'USD':true}}</span>
     </h4>
   </div>
   <div class="medium-4 columns text-right">
     <h5 class="text--red"
-       *ngIf="(cart | async).deliveryOptionId === undefined">Please select a delivery option...</h5>
+       *ngIf="(cart | async).deliveryOptionId === undefined">Selecciona opción de envío</h5>
     <a class="success button large"
        *ngIf="(cart | async).deliveryOptionId !== undefined"
-       routerLink="/confirmed">Purchase Order</a>
+       routerLink="/confirmed">Comprar</a>
   </div>
   <hr/>
 </div>
 <div class="row">
   <div class="medium-8 columns">
-    <h4>Delivery 1 of 1</h4>
-    <small>Dispatching to the UK....</small>
     <div class="row checkout_row"
         *ngFor="let item of cartItems">
       <div class="medium-2 columns text-center">
@@ -43,7 +41,7 @@
     </div>
   </div>
   <div class="medium-4 columns">
-    <h4>Delivery Options</h4>
+    <h4>Opciones de envío</h4>
 
     <div class="row delivery-option"
         *ngFor="let option of deliveryOptions | async">
@@ -70,7 +68,7 @@
   <div class="row">
     <div class="small-10 columns small-centered">
       <a class="warning button expanded"
-        routerLink="/">Continue Shopping</a>
+        routerLink="/">Seguir comprando</a>
     </div>
   </div>
 </div>
