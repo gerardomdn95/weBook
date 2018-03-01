@@ -1,0 +1,62 @@
+[
+  {
+    "id": "9aa113b4-1e4e-4cde-bf9d-8358fc78ea4f",
+    "price": 150,
+    "name": "Ana Karenina",
+    "description": "Ana Karénina es una novela del escritor ruso León Tolstói publicada por primera vez en 1877.",
+    "ingredients": [
+      {
+        "name": "Autor",
+        "percentage": "León Tolstói"
+      }
+    ]
+  },
+  {
+    "id": "bdcbe438-ac85-4acf-8949-5627fd5b57df",
+    "price": 135,
+    "name": "Las Batallas en el Desierto",
+    "description": "Las batallas en el desierto es una novela corta de José Emilio Pacheco, que apareció por primera vez en el suplemento sábado del periódico unomásuno el 7 de junio de 1980. Causó tal impresión que un año más tarde la editorial Era la publicó en 1981.",
+    "ingredients": [
+      {
+        "name": "Autor",
+        "percentage": "José Emilio Pacheco"
+      }
+    ]
+  },
+  {
+    "id": "58552daa-30f6-46fa-a808-f1a1d7667561",
+    "price": 250,
+    "name": "Las Desventuras del Joven Werther",
+    "description": "Las desventuras del joven Werther se presenta como una colección de epístolas escritas por Werther, un joven artista de temperamento sensible y enamorado, a su amigo Guillermo. En estas cartas, Werther revela datos íntimos de su estancia en el pueblo ficticio de Wahlheim (basado en la ciudad de Garbenheim), donde queda encantado por las tradiciones simples de los campesinos.",
+    "ingredients": [
+      {
+        "name": "Autor",
+        "percentage": " Johann Wolfgang von Goethe"
+      }
+    ]
+  },
+  {
+    "id": "d4666802-fd84-476f-9eea-c8dd29cfb633",
+    "price": 1.99,
+    "name": "El Llano en Llamas",
+    "description": "El Llano en llamas es hoy un clásico de la literatura mexicana e hispanoamericana, y probablemente uno de los volúmenes de cuentos más traducido a otros idiomas en el mundo entero. Obra aparentemente sencilla resulta, sin embargo, profundamente desconcertante.",
+    "ingredients": [
+      {
+        "name": "Autor",
+        "percentage": "Juan Rulfo"
+      }
+    ]
+  },
+  {
+    "id": "7ef3b9dd-5a95-4415-af37-6871d6ff0262",
+    "price": 180,
+    "name": "Santa",
+    "description": "Santa fue publicado en 1903 por el escritor mexicano Federico Gamboa, esta obra se la dedico a Jesús F. Contreras quienes tenían una estrecha amistad.",
+    "ingredients": [
+      {
+        "name": "Autor",
+        "percentage": "Federico Gamboa"
+      }
+    ]
+  }
+]
