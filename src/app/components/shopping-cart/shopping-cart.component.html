@@ -1,35 +1,44 @@
-<div class="row">
-  <div class="small-12 columns">
-    <h3>
-      <i class="material-icons">shopping_cart</i>
-      Carrito
-    </h3>
+<div class="container" style="position: fixed">
+  <div class="row">
+    <div class="small-12 columns">
+      <h3>
+        <i class="material-icons">supervised_user_circle</i>
+        Mi WeBook
+      </h3>
+    </div>
+    <div class="small-12 columns">
+      <a class="primary button large expanded" routerLink="/add">Agregar un nuevo Libro</a>
+    </div>
+    <div class="small-12 columns">
+      <a class="warning button large expanded" routerLink="/edit">Editar mis libros</a>
+    </div>
+    <div class="small-12 columns">
+      <h3>
+        <i class="material-icons">shopping_cart</i>
+        Carrito
+      </h3>
+    </div>
   </div>
-</div>
-<br/>
-<div class="row">
-  <div class="small-12 columns">
-    <h5>
-      Sub Total ({{itemCount}} items):
-      <span class="text--red text--bold js-cart-total">{{(cart | async).grossTotal | currency:'USD':true}}</span>
-    </h5>
+  <br/>
+  <div class="row">
+    <div class="small-12 columns">
+      <h5>
+        Sub Total ({{itemCount}} items):
+        <span class="text--red text--bold js-cart-total">{{(cart | async).grossTotal | currency:'USD':true}}</span>
+      </h5>
+    </div>
   </div>
-</div>
-<br/>
-<div class="row">
-  <div class="small-12 columns">
-    <a class="success button large expanded"
-       [attr.disabled]="itemCount === 0 ? true : null"
-       routerLink="/checkout">Proceder al pago</a>
+  <br/>
+  <div class="row">
+    <div class="small-12 columns">
+      <a class="success button large expanded" [attr.disabled]="itemCount === 0 ? true : null" routerLink="/checkout">Proceder al pago</a>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="small-12 columns">
-    <button type="button"
-            class="secondary button small expanded js-btn-empty-cart"
-            (click)="emptyCart()"
-            [attr.disabled]="itemCount === 0 ? true : null">
-      Vaciar carrito
-    </button>
+  <div class="row">
+    <div class="small-12 columns">
+      <button type="button" class="secondary button small expanded js-btn-empty-cart" (click)="emptyCart()" [attr.disabled]="itemCount === 0 ? true : null">
+        Vaciar carrito
+      </button>
+    </div>
   </div>
 </div>

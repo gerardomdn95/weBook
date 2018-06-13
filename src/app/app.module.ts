@@ -5,8 +5,11 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app.routing";
+import { AddComponent } from "./components/add/add.component";
 import { CheckoutComponent } from "./components/checkout/checkout.component";
+import { EditComponent } from "./components/edit/edit.component";
 import { LandingComponent } from "./components/landing/landing.component";
+import { LoginComponent } from "./components/login/LoginComponent";
 import { OrderConfirmationComponent } from "./components/order-confirmation/order-confirmation.component";
 import { ShoppingCartComponent } from "./components/shopping-cart/shopping-cart.component";
 import { StoreFrontComponent } from "./components/store-front/store-front.component";
@@ -25,6 +28,9 @@ import { LocalStorageServie, StorageService } from "./services/storage.service";
     CheckoutComponent,
     OrderConfirmationComponent,
     LandingComponent,
+    LoginComponent,
+    AddComponent,
+    EditComponent,
   ],
   imports: [
     BrowserModule,
