@@ -1,3 +1,59 @@
-<p>
-  edit works!
-</p>
+<h3>Editar información de libro</h3>
+
+
+<div class="row">
+  <div class="columns small-12 medium-6">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="medium-6 cell">
+          <label> Título libro
+            <input type="text" placeholder="" [(ngModel)]="titulo">
+          </label>
+        </div>
+        <div class="medium-6 cell">
+          <label>Autor
+            <input type="text" placeholder="" [(ngModel)]="autor">
+          </label>
+        </div>
+        <div class="medium-6 cell">
+          <label>Descripción
+            <textarea name="" id="" cols="30" rows="5" [(ngModel)]="descripcion"></textarea>
+          </label>
+        </div>
+        <div class="medium-3 cell">
+          <label>Precio
+            <input type="number" placeholder="" max="1000" min="0" [(ngModel)]="precio">
+          </label>
+        </div>
+        <div class="medium-3 cell">
+          <label>Imagen
+            <input type="file" name="" id="" [(ngModel)]="file">
+          </label>
+        </div>
+        <br>
+        <div class="medium-6">
+          <a class="warning button large expanded" routerLink="/edit">Guardar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="columns small-12 medium-6">
+    <div class="row">
+      <div class="columns small-12 medium-6">
+        <img src="./assets/7ef3b9dd-5a95-4415-af37-6871d6ff0262.jpg" alt="">
+      </div>
+      <div class="columns small-12 medium-6">
+        <h3>{{titulo}}</h3>
+        <h5>{{autor}}</h5>
+        <p>{{descripcion}}</p>
+        <p>${{precio}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
